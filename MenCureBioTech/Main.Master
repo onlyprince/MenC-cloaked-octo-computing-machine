@@ -1,0 +1,183 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="MenCureBioTech.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderTitle" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/arial.js"></script>
+    <script type="text/javascript" src="js/cuf_run.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sliderCompanyLogos').cycle({
+                fx: 'fade', //'scrollLeft,scrollDown,scrollRight,scrollUp',blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, none, scrollUp,scrollDown,scrollLeft,scrollRight,scrollHorz,scrollVert,shuffle,slideX,slideY,toss,turnUp,turnDown,turnLeft,turnRight,uncover,ipe ,zoom
+                speed: 'slow',
+                timeout: 2000
+            });
+            $('#sliderTopProducts').cycle({
+                fx: 'fade', //'scrollLeft,scrollDown,scrollRight,scrollUp',blindX, blindY, blindZ, cover, curtainX, curtainY, fade, fadeZoom, growX, growY, none, scrollUp,scrollDown,scrollLeft,scrollRight,scrollHorz,scrollVert,shuffle,slideX,slideY,toss,turnUp,turnDown,turnLeft,turnRight,uncover,ipe ,zoom
+                speed: 'slow',
+                timeout: 3000
+            });
+            
+            $("#menuHome, #menuOurMission, #menuProducts, #menuContactUs").removeClass("active");
+            if (window.location.href.indexOf("Home.aspx") >= 0)
+            {
+                $("#menuHome").addClass("active");
+            }
+            else if (window.location.href.indexOf("OurMission.aspx") >= 0)
+            {
+                $("#menuOurMission").addClass("active");
+            }
+            else if (window.location.href.indexOf("Category.aspx") >= 0)
+            {
+                $("#menuProducts").addClass("active");
+            }
+            else if (window.location.href.indexOf("ContactUs.aspx") >= 0)
+            {
+                $("#menuContactUs").addClass("active");
+            }
+            
+           
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <div class="main">
+
+            <div class="header">
+                <div class="header_resize">
+                    <div class="menu_nav">
+                        <ul>
+                            <li id="menuHome" class="active"><a href="Home.aspx">Home</a></li>
+                            <li id="menuOurMission"><a href="OurMission.aspx">Our Mission</a></li>
+                            <li id="menuProducts"><a href="Category.aspx">Products</a></li>
+                            <li id="menuContactUs"><a href="ContactUs.aspx">Contact Us</a></li>
+                        </ul>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="logo">
+                        <h1><a href="Home.aspx">MenCure BioTech<br />
+                            <small>Your Dedicated Drug Distributor</small></a></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content_resize">
+                    <div class="mainbar">
+                        <div class="article">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolderArticleOne" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="article">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolderArticleTwo" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                         
+                    </div>
+                    <div class="sidebar">
+                        <div class="gadget">
+                            <h2 class="star"><span>Deals in</span></h2>
+                            <ul id="sliderCompanyLogos" style="border:1px solid #ddd">
+                                <li><img border="0" width="150" src="images/Company Logos/Baxter.jpg" alt="Baxter" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Bharat-Serum.jpg" alt="Bharat Serum" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Biocon.jpg" alt="Biocon" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Cadila.jpg" alt="Cadila" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Cipla.jpg" alt="Cipla" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Dr-Reddys.jpg" alt="Dr Reddys" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Emcure.jpg" alt="Emcure" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Freginus-kabi.jpg" alt="Freginus kabi" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Intas.jpg" alt="Intas" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Medicare-Remedies.jpg" alt="Medicare Remedies" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Natco.jpg" alt="Natco" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Nirma.jpg" alt="Nirma" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/PlasmaGen.jpg" alt="PlasmaGen" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Prosper.jpg" alt="Prosper" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Reliance.jpg" alt="Reliance" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/Roche.jpg" alt="Roche" /></li>
+                                <li><img border="0" width="150" src="images/Company Logos/VHB.jpg" alt="VHB" /></li>
+                            </ul>
+                        </div>
+                        <div class="gadget">
+                            <h2 class="star"><span>Top Products</span></h2>
+                            <ul id="sliderTopProducts" style="border:1px solid #ddd">
+                                <li><img border="0" width="150" src="images/TopProducts/HumanAlbumin.jpg" /></li>
+                                <li><img border="0" width="150" src="images/TopProducts/HumanHepatitisB.jpg"  /></li>
+                                <li><img border="0" width="150" src="images/TopProducts/ImatibTablet.jpg"  /></li>
+                                <li><img border="0" width="150" src="images/TopProducts/Paclitaxel.jpg" /></li>
+                                <li><img border="0" width="150" src="images/TopProducts/Rabipur.jpg"  /></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+
+            <!--
+            <div class="fbg">
+                <div class="fbg_resize">
+                    <div class="col c1">
+                        <h2>About</h2>
+                        <img src="images/white.jpg" width="66" height="66" alt="pix" />
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. llorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum. <a href="#">Learn more...</a></p>
+                    </div>
+                    <div class="col c2">
+                        <h2>Lorem Ipsum</h2>
+                        <ul class="sb_menu">
+                            <li><a href="#">consequat molestie</a></li>
+                            <li><a href="#">sem justo</a></li>
+                            <li><a href="#">semper</a></li>
+                            <li><a href="#">magna sed purus</a></li>
+                            <li><a href="#">tincidunt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col c3">
+                        <h2>Contact Us</h2>
+                        <p></p>
+                        <p>
+                            <strong>Head Office:</strong> Chandni Chowk, Delhi
+                            <br />
+                            <strong>Branch Office:</strong> JJ Plaza, Huzrat Road, Gwalior
+                            <br />
+                            <br />
+                            <strong>Mobile:</strong> <a href="tel:+918527021165">+91 852 702 1165</a><br />
+                            <strong>Mobile:</strong> <a href="tel:+919560056571">+91 956 005 6571</a><br />
+                            <strong>Mobile:</strong> <a href="tel:+919891009883">+91 989 100 9883</a><br />
+                            <strong>Phone:</strong>  <a href="tel:+911123267125">+91 11 23267125</a><br />
+                            <strong>E-mail:</strong> <a href="mailto:email@mencurebiotech.com">email@mencurebiotech.com</a>
+                        </p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div> -->
+            <div class="footer">
+                <div class="footer_resize">
+                    <p class="lf">&copy; Copyright MenCure BioTech. Designed by Blue <a href="http://www.bluewebtemplates.com">Website Templates</a></p>
+                    <ul class="fmenu">
+                        <li class="active"><a href="Home.aspx">Home</a></li>
+                        <li><a href="OurMission.aspx">Our Mission</a></li>
+                        <li><a href="Category.aspx">Products</a></li>
+                        <li><a href="ContactUs.aspx">Contact Us</a></li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
