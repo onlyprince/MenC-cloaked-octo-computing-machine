@@ -5,7 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderArticleOne" runat="server">
-    <h2 style="padding-top:0px">Contact us</h2>
     <table style="width:100%" border="0">
         <tr>
             <td style="width:50%">

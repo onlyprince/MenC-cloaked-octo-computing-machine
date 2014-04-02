@@ -5,8 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderArticleOne" runat="server">
-    
-        <h2 style="padding-top:0px">Our Mission</h2>
         <asp:Image ID="Image1" runat="server" BorderStyle="None" ImageAlign="Left" ImageUrl="~/images/logo.jpg" />
         At <strong>MenCure BioTech</strong> our mission is to satisfy medical requirements across the 
     length and breadth of the country by ensuring easy availability of the best and most effective pharmaceutical 
