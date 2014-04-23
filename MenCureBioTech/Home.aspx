@@ -16,7 +16,7 @@
 
 </asp:Content>
 <asp:Content ContentPlaceHolderID="ContentPlaceHolderArticleTwo" runat="server">
-    <h2><span>Authorized CFA for :</span></h2>
+    <h2><span>CFA of:</span></h2>
     <table style="width: 90%">
         <tr>
             <td>Khandelwal Labs(Onco)</td>
@@ -27,7 +27,7 @@
             <td>Shilpa Medicare Remedies(Onco)</td>
         </tr>
     </table>
-    <h2><span>Authorized Dealer for:</span></h2>
+    <h2><span>Dealers of:</span></h2>
     <table style="width: 80%">
         <tr>
             <td>Baxter India</td>
